@@ -1715,11 +1715,17 @@
               Ct.isPc() && e.addClass("show-menu");
             }),
             t.on("mouseleave", function () {
-              Ct.isPc() && e.removeClass("show-menu");
+              Ct.isPc() && e.removeClass("");
             }),
             n.on("click", function () {
               Ct.isPc() || e.toggleClass("show-menu");
             }));
+
+          var pt = e.find(".ptitle");
+          pt.length < 1 ||
+            pt.on("click", function () {
+              Ct.isPc() || e.removeClass("show-menu");
+            });
         }
       }
     }

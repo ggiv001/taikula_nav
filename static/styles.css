@@ -416,6 +416,10 @@ body.modal-open .header {
     width: 33.33333333%
 }
 
+.f-4>.f-item {
+    width: 25%
+}
+
 .f-2>.f-item {
     width: 50%
 }
@@ -4359,15 +4363,20 @@ body.modal-open .header {
     }
 }
 
+.h-title{
+    display: none;
+}
+
 @media (max-width:999.5px) {
     .h-title {
-        position: static
+        position: static;
+        display: block;
     }
 
     .h-title .page-title {
-        margin: 8px 0;
-        height: 20px;
-        line-height: 20px;
+        margin: 5px 0;
+        height: 25px;
+        line-height: 25px;
         padding: 4px 10px
     }
 
@@ -4404,13 +4413,13 @@ body.modal-open .header {
     }
 
     .h-title .logo-img .slide-up {
-        width: 20px;
-        height: 20px
+        width: 25px;
+        height: 25px
     }
 
     .h-title .logo-img .slide-up .li-item {
-        width: 20px;
-        height: 20px
+        width: 25px;
+        height: 25px
     }
 }
 
@@ -4425,7 +4434,8 @@ body.modal-open .header {
         -webkit-flex-grow: 1;
         -moz-box-flex: 1;
         -ms-flex-positive: 1;
-        flex-grow: 1
+        flex-grow: 1;
+        height: 64px;
     }
 }
 
@@ -4749,6 +4759,16 @@ body.modal-open .header {
     height: 40px;
     fill: #fff
 }
+.header .logo img {
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    fill: #fff
+}
+
+.logo-text{
+    color: #fff;
+}
 
 .header .header-main {
     -webkit-box-pack: justify;
@@ -4781,16 +4801,24 @@ body.modal-open .header {
 
     .header .container .wrap-left {
         display: block;
-        width: 60px;
-        padding-left: 20px
+        width: 100px;
+        padding-left: 20px;
     }
 
     .header .logo .logo-img {
-        padding: 8px 0
+        padding: 4px 0
     }
 
     .header .logo svg {
         height: 28px
+    }
+
+    .header .logo img {
+        height: 34px
+    }
+
+    .logo-text{
+        font-size: 14px;
     }
 
     .header .header-main {
