@@ -4738,7 +4738,7 @@ body.modal-open .header {
     left: 0;
     top: 0;
     right: 0;
-    background: rgba(65, 127, 249, 0.9);
+    background: #5551ef;
     -webkit-backdrop-filter: saturate(180%) blur(4px);
     backdrop-filter: saturate(180%) blur(4px)
 }
